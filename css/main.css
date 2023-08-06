@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+    background-image: url("https://media-we-cdn.oriflame.com/contentImage?externalMediaId=c133f0ca-d3f6-40b9-a7ad-7fa685d014a5&w=1600&q=90");
+background-size: 80%;
+background-repeat: no-repeat;    
+}
+div.menu {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  padding-left: 50px;
+  padding-top: 5px;
+  position: relative;
+}
+div.menu > div.users {
+  width: 50px;
+  height: 50px;
+}
+
+div.menu > div.users > i {
+  font-size: 20px;
+  cursor: pointer;
+}
+div.menu>div.cover{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.459);
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+    backdrop-filter: blure(5px);
+    transition: all 300ms linear;
+}
+.coverShow{
+    opacity: 1 !important;
+    transition: all 300ms linear;
+    z-index: 1;
+}
+div.menuLeft {
+  width: 300px;
+  height: 100vh;
+  background-color: lightgray;
+  left: -300px;
+  top: 0;
+  position: absolute;
+  transition: all 300ms linear;
+  backdrop-filter: blure(5px);
+
+}
+.Left {
+  left: 0 !important;
+  transition: all 300ms linear;
+}
